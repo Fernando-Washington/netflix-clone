@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #FFFFFF;
+    --netlfix-red: #E50914;
+    --secondary-color: #000000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+/*Header*/
+
+.header-container {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.header-container nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 40%;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    margin: 16px 0 0 16px;
+}
+
+.select-language {
+    padding: 6px 36px 6px 34px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    position: relative;
+    
+    /*borda levemente transparente solid 1px*/
+}
+
+.options a{
+    background-color: var(--netlfix-red);
+    color: var(--text-color);
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+/*Main*/
+
+.text-container {
+    background-image: url(/assets/netflix-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajuste o nível de escuridão */
+    background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*filter: brightness();*/
+}
+
+.text-container h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;  
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.text-container h3 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.text {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-container {
+    text-align: center;
+    width: 100%;
+}
+
+.input-container input {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+}
+
+.input-container input::placeholder::after{
+    display: none;
+}
+
+.input-container button {
+    position: relative;
+    bottom: -4px;
+    padding: 0.7rem 1rem;
+    gap: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--netlfix-red);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    transition: filter 0.4s ease-in-out;
+}
+.input-container > button:hover {
+    filter: brightness(0.8);
+}
+
+.input-container > button::placeholder::after {
+    display: none;
+}
+
+.input-container > button > i {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
