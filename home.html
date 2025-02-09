@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlix</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>Netlfix</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="shortcut icon" href="/assets/netflix-favicon.ico" type="image/favicon-icon">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css' integrity='sha512-ywmPbuxGS4cJ7GxwCX+bCJweeext047ZYU2HP52WWKbpJnF4/Zzfr2Bo19J4CWPXZmleVusQ9d//RB5bq0RP7w==' crossorigin='anonymous'/>
 </head>
 <body>
     <header class="header-container">
         <nav>
-            <div class="logo">
-                <img src="assets/logo.png" alt="Logo da Netflix">
-            </div>
-            <div class="options">
-                <select class="select-language" name="select" id="select">
-                    <option value="value-1" selected>português</option>
-                    <option value="value-2">inglês</option>
-                </select>
-                <a href="login.html">Entrar</a>
+            <img src="assets/logo.png" alt="Logo da Netflix">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Bombando</a></li>
+                <li><a href="#">Minha lista</a></li>
+            </ul>
+            <div class="profile-container">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-bell"></i>
+                <img src="assets/profile.png" alt="Imagem de perfil">
+                <i class="bi bi-caret-down-fill"></i>
             </div>
         </nav>
     </header>
     <main>
-        <section class="text-container">
-            <div class="text">
-                <h1>Filmes, séries e muito mais, sem limites</h1>
-                <p>A partir de R$ 20,90. Cancele quando quiser.</p>
-                <h3>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+        <section class="home-container">
+            <div class="text-container">
+                <img src="assets/houseofninjas-text.png" alt="">
+                <p>Years after retiring from their formidable ninja lives, a dysfunctional family must return to shadowy missions to counteract a string of looming threats.</p>
+                <div class="text-button">
+                    <a href="#" class="play-button"><i class="bi bi-play-fill"></i>Play</a>
+                    <a href="#" class="more-info-button"><i class="bi bi-info-circle"></i>More Info</a>
+                </div>
             </div>
-            <div class="input-container">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <button id="letsgo">Vamos lá <i class="bi bi-chevron-right"></i></button>
-            </div>
+            
         </section>
+        
     </main>
     <footer></footer>
+    <!--aqui vai grid para fazer o layout-->
 </body>
 </html>
