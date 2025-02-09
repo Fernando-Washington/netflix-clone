@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +14,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", serif;
     color: var(--text-color);
     font-size: 16px;
 }
@@ -51,7 +54,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7); /* Ajuste o nível de escuridão */
     background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,19 +63,144 @@ body {
 .login-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: red;
-    height: 80%;
-    position: relative;
-    bottom: -10%;
+    padding: 3rem 5rem;
+    max-width: 450px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+.login-box h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+.input-box {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 50px;
+    padding: 16px 20px;
+    border-radius: 4px;
+    border: none;
+    background: #35353549;
+    color: white;
+    font-size: 16px;
+}
+
+.input-box > input::placeholder {
+    color: var(--text-color);
 }
 
 .login-box > form{
     display: flex;
     flex-direction: column;
-    width: 63%;
-    background-color: blue;
+    width: 100%;
     align-items: center;
     height: 100%;
+}
+
+.login-box > form > button {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+    background-color: var(--netlfix-red);
+    color: var(--text-color);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.login-box > form > button:hover {
+    filter: brightness(0.8);
+}
+
+.text-or {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.login-box > form > a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.code-acess {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem; 
+    font-weight: 400;
+    background-color: #5a585880;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.forget-pass {
+    font-weight: 300;
+}
+
+.forget-pass:hover {
+    text-decoration: underline;
+    filter: brightness(0.8);
+}
+
+.help {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    right: 52px;
+    margin-bottom: 1rem;
+}
+
+.help > span > input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    top: 3px;
+}
+
+.help > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.new-here {
+    position: relative;
+    right: 24px;
+    color: #ccccccc5;
+    margin-bottom: 1rem
+}
+
+.new-here > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.new-here > a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.recaptcha {
+    font-size: 12px;
+    color: #ccccccc5;
+}
+
+.recaptcha > a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.recaptcha > a:hover {
+    text-decoration: underline;
 }
 
