@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #FFFFFF;
+    --netlfix-red: #E50914;
+    --secondary-color: #000000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+/*Header*/
+
+.header-container{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.login-header {
+    left: 0;
+    right: 0;
+}
+
+.header-container nav{
+    position: relative;
+    left: 10%;
+    top: 8px;
+}
+
+.logo img {
+    width: 140px;
+    margin: 16px 0 0 16px;
+}
+
+/*Main*/
+
+.login-container {
+    background-image: url(/assets/netflix-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajuste o nível de escuridão */
+    background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    height: 80%;
+    position: relative;
+    bottom: -10%;
+}
+
+.login-box > form{
+    display: flex;
+    flex-direction: column;
+    width: 63%;
+    background-color: blue;
+    align-items: center;
+    height: 100%;
+}
+
