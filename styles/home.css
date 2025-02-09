@@ -17,6 +17,7 @@ body{
     color: var(--text-color);
     font-size: 16px;
     background-color: #1a1919;
+    overflow-x: hidden;
 }
 
 .header-container {
@@ -71,10 +72,13 @@ header > nav > ul > li > a{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: 730px; /* gambiarra remover e deixar auto mas fica assim por enquanto */
     background-color: rgba(0, 0, 0, 0.3); /* Ajuste o nível de escuridão */
     background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
     /*filter: brightness();*/
+    display: flex;
+    flex-direction: column;
 }
 
 .text-container img {
@@ -87,9 +91,8 @@ header > nav > ul > li > a{
     flex-direction: column;
     width: 40%;
     padding: 4rem;
-    margin-bottom: 2rem;
     position: relative;
-    top: 15%;
+    top: 64px;
 }
 
 .text-container > p {
@@ -134,4 +137,27 @@ header > nav > ul > li > a{
     font-size: 1.5rem;
     color: #F6F6F6;
 }
+
+/*Text grid*/
+.title-grid-1 {
+    padding: 1rem 0 0 4rem;
+    position: relative;
+    top: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 220px);
+    gap: 8px;
+    padding: 1rem 0 0 4rem;
+    width: 100%;
+    position: relative;
+    top: 2rem;
+}
+
+.grid-img:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
 
