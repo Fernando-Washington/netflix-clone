@@ -16,26 +16,44 @@
         <section class="login-container">
             <div class="login-box">
                 <h1>Entrar</h1>
-                    <form action="">
-                        <input class="input-box" type="email" name="email" id="email" placeholder="Email ou número de celular">
-                        <input class="input-box" type="password" name="password" id="password" placeholder="Senha">
-                        <button type="submit" id="sing-in">Entrar</button>
-                        <p class="text-or">ou</p>
-                        <a class="code-acess" href="#">Usar um código de acesso</a>
-                        <a class="forget-pass" href="#">Esqueceu a senha?</a>
-                        <div class="help">
-                            <span><input type="checkbox" name="remember" id="remember"></span>
-                            <a href="#">Lembre-se de mim</a>
-                        </div>
-                        
+                <form id="loginForm" action="." method="post">
+                    <input class="input-box" type="email" name="email" id="email" placeholder="Email ou número de celular">
+                    <input class="input-box" type="password" name="password" id="password" placeholder="Senha">
+                    <button type="submit" id="sing-in">Entrar</button>
+                    <p class="text-or">ou</p>
+                    <a class="code-acess" href="#">Usar um código de acesso</a>
+                    <a class="forget-pass" href="#">Esqueceu a senha?</a>
+                    <div class="help">
+                        <span><input type="checkbox" name="remember" id="remember"></span>
+                        <a href="#">Lembre-se de mim</a>
+                    </div>
                     
-                        <p class="new-here">Novo por aqui? <a href="#">Assine agora</a>.</p>
-                        <p class="recaptcha">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
-                    </form>
+                    <p class="new-here">Novo por aqui? <a href="#">Assine agora</a>.</p>
+                    <p class="recaptcha">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+                </form>
             </div>
         </section>
     </main>
     <footer></footer>
-    
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const validCredentials = {
+            username: 'rogerin123@gmail.com',
+            password: 'souflamengo'
+        };
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (username === validCredentials.username && password === validCredentials.password) {
+                window.location.href = 'home.html';
+            } else {
+                alert('Credenciais inválidas. Tente novamente.');
+            }
+        });
+    </script>
 </body>
 </html>
