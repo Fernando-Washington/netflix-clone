@@ -143,6 +143,7 @@ header > nav > ul > li > a{
     padding: 1rem 0 0 4rem;
     position: relative;
     top: 2rem;
+    width: 100%;
 }
 
 .grid-container {
@@ -153,11 +154,32 @@ header > nav > ul > li > a{
     width: 100%;
     position: relative;
     top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .grid-img:hover {
     cursor: pointer;
     transform: scale(1.04);
+}
+
+/*Video*/
+
+.video-container {
+    background-color: #181818;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.top-10-item {
+    position: relative;
+    left: -10%;
+}
+
+.top-10-text {
+    position: relative;
+    left: -30%;
+    width: 512px;
 }
 
 
