@@ -182,4 +182,69 @@ header > nav > ul > li > a{
     width: 512px;
 }
 
+footer {
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    padding: 2rem 8rem 0 8rem ;
+    background-color: #181818;
+}
 
+footer > .social-link {
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+footer > .social-link > a {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+footer > .social-link > a > i{
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+footer > .footer-link {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    text-decoration: none;
+    color: #000000;
+}
+
+footer > .footer-link > span{
+    margin-bottom: 1rem;
+}
+
+footer > .footer-link > span > a {
+    text-decoration: none;
+    color: #ccc;
+    filter: brightness(0.7);
+    font-size: 0.8rem;
+}
+
+.code-service {
+    margin: 4rem 0 2rem 0;
+}
+
+.code-service > a{ /*service code?*/
+    border: 2px solid #ccc;
+    filter: brightness(0.5);
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.8rem;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+
+.copyright > p{
+    color: #ccc;
+    filter: brightness(0.7);
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
