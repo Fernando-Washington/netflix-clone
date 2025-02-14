@@ -40,26 +40,30 @@ body {
     margin: 16px 0 0 16px;
 }
 
+.select-container > select {
+    background: url(/assets/translate.png) no-repeat left center;
+    background-position-x: 0.8rem;
+    background-size: 14px;
+}
+
 .select-language {
     padding: 6px 36px 6px 34px;
     background-color: transparent;
     color: var(--text-color);
     font-size: 16px;
     position: relative;
-    background: url(/assets/translate.png) no-repeat left center;
-    background-size: 14px;
     border-radius: 4px;
     background-color: #80808015;
     
     /*borda levemente transparente solid 1px*/
 }
 
-.options {
+.select-container {
     display: flex;
     gap: 1rem;
 }
 
-.options > a{
+.select-container > a{
     background-color: var(--netlfix-red);
     color: var(--text-color);
     padding: 0.5rem 0.8rem;
