@@ -8,6 +8,7 @@
     --text-color: #FFFFFF;
     --netlfix-red: #E50914;
     --secondary-color: #000000;
+    --transparent-white: #FFFFFF50; /*tom do transparente*/
 }
 
 body {
@@ -26,7 +27,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
 }
 
-.header-container nav{
+.header-container > nav{
     padding: 1rem;
     display: flex;
     justify-content: space-around;
@@ -34,7 +35,7 @@ body {
     align-items: center;
 }
 
-.logo img {
+.logo > img {
     width: 140px;
     margin: 16px 0 0 16px;
 }
@@ -58,7 +59,7 @@ body {
     gap: 1rem;
 }
 
-.options a{
+.options > a{
     background-color: var(--netlfix-red);
     color: var(--text-color);
     padding: 0.5rem 0.8rem;
@@ -85,24 +86,24 @@ body {
     /*filter: brightness();*/
 }
 
-.text-container h1 {
+.text-container > div> h1 {
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 1rem;  
 }
 
-.text-container p {
+.text-container > p {
     margin-bottom: 2rem;
 }
 
-.text p {
+.text > p {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
-.text-container h3 {
-    font-size: 1.1rem;
+.text-container > div > h3 {
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 1rem;
 }
@@ -120,35 +121,35 @@ body {
     width: 100%;
 }
 
-.input-container input[type="email"]{
+.input-container > input[type="email"]{
     width: 30%;
-    padding: 1rem;
+    padding: 1.2rem 1rem;
     border-radius: 5px;
     border: none;
-    background-color: transparent;
-    border: 1px solid #ccc;
+    background-color: #00000060;
+    border: 1px solid var(--transparent-white);
     /*mudar cor da borda, colocar background mais escuro, personalizar hover*/
 }
 
-.input-container input::placeholder{
+.input-container > input::placeholder{
         font-size: 1rem;
         font-weight: 600;
         color: #ccc;
         filter: brightness(0.7);
 }
 
-.input-container button {
+.input-container > button {
     position: relative;
     bottom: -4px;
-    padding: 0.7rem 1rem;
+    padding: 0.8rem 1rem;
     gap: 1rem;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     background-color: var(--netlfix-red);
     color: var(--text-color);
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 520;
     transition: filter 0.4s ease-in-out;
 }
 .input-container > button:hover {
@@ -164,11 +165,122 @@ body {
     font-weight: 900;
 }
 
+/*Footer signup*/
 
+.footer-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    min-height: 24vh;
+    height: auto;
+}
 
+.footer-signup > p{
+    margin-bottom: 8px;
+    font-weight: 500;
+}
 
+.signup-leads{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+}
 
+.signup-leads > input[type="email"]{
+    width: 40%;
+    padding: 1.2rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #00000060;
+    border: 1px solid var(--transparent-white);
+    /*mudar cor da borda, colocar background mais escuro, personalizar hover*/
+}
 
+.signup-leads > input::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ccc;
+    filter: brightness(0.7);
+}
 
+.signup-leads > button {
+    position: relative;
+    padding: 0.8rem 1.7rem;
+    gap: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--netlfix-red);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 520;
+    transition: filter 0.4s ease-in-out;
+}
+.sinup-leads > button:hover {
+    filter: brightness(0.8);
+}
 
+/*Footer*/
 
+footer {
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    padding: 2rem 8rem 0 8rem ;
+    background-color: #000000;
+}
+footer > .call-us {
+    margin-bottom: 2rem;
+    font-size: 1rem; 
+}
+
+footer > .call-us > span > p {
+    color: #ccc;
+    filter: brightness(0.7);
+}
+
+footer > .call-us > span > p > a{
+    color: #FFFFFF;
+    filter: brightness(0.9);
+    text-decoration: underline;
+}
+
+footer > .social-link {
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+footer > .social-link > a {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+footer > .social-link > a > i{
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+footer > .footer-link {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    color: #000000;
+}
+
+footer > .footer-link > span{
+    margin-bottom: 1rem;
+}
+
+footer > .footer-link > span > a {
+    text-decoration: underline;
+    color: #ccc;
+    filter: brightness(0.7);
+    font-size: 0.9rem;
+}
