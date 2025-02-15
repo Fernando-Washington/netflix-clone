@@ -51,7 +51,7 @@ body {
     background-image: url(/assets/netflix-bg.jpg) ;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Ajuste o nível de escuridão */
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste o nível de escuridão */
     background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
     width: 100%;
     min-height: 100vh;
@@ -205,3 +205,69 @@ body {
     text-decoration: underline;
 }
 
+/*Footer*/
+
+footer {
+    width: 100%;
+    min-height: 86vh;
+    height: auto;
+    padding: 2rem 8rem 0 8rem ;
+    background-color: #000000;
+}
+
+footer > .call-us {
+    margin-bottom: 2rem;
+    font-size: 1rem; 
+}
+
+footer > .call-us > span > p {
+    color: #ccc;
+    filter: brightness(0.7);
+}
+
+footer > .call-us > span > p > a {
+    color: #FFFFFF;
+    filter: brightness(0.9);
+    text-decoration: none;
+}
+
+footer > .call-us > span > p > a:hover {
+    text-decoration: underline;
+}
+
+footer > .footer-link {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    color: #000000;
+}
+
+footer > .footer-link > span{
+    margin-bottom: 1rem;
+}
+
+footer > .footer-link > span > a {
+    text-decoration: underline;
+    color: #ccc;
+    filter: brightness(0.7);
+    font-size: 0.9rem;
+}
+
+footer > .select-container > select {
+    padding: 6px 36px 6px 34px;
+    color: var(--text-color);
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #80808090;
+
+    /*Translate icon*/
+
+    background: url(/assets/translate.png) no-repeat left center;
+    background-position-x: 0.8rem;
+    background-size: 14px;
+    
+    /*borda levemente transparente solid 1px*/
+}
+
+footer > .select-container > select > option {
+    color: var(--secondary-color);
+}
