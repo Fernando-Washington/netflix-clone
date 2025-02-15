@@ -27,17 +27,60 @@
                     <a class="code-acess" href="#">Usar um código de acesso</a>
                     <a class="forget-pass" href="#">Esqueceu a senha?</a>
                     <div class="help">
-                        <span><input type="checkbox" name="remember" id="remember"></span>
+                        <span>
+                            <input type="checkbox" name="remember" id="remember">
+                        </span>
                         <a href="#">Lembre-se de mim</a>
                     </div>
                     
-                    <p class="new-here">Novo por aqui? <a href="#">Assine agora</a>.</p>
+                    <p class="new-here">Novo por aqui? 
+                        <a href="#">Assine agora</a>.
+                    </p>
                     <p class="recaptcha">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
                 </form>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="call-us">
+            <span>
+                <p>Questions? Call <a href="#">1-844-505-2993</a></p>
+            </span>
+        </div>
+        <div class="footer-link">
+            <span>
+                <a href="#">FAQ.</a>
+            </span>
+            <span>
+                <a href="#">Help Center</a>
+            </span>
+            <span>
+                <a href="#">Netflix Shop</a>
+            </span>
+            <span>
+                <a href="#">Terms of Use</a>
+            </span>
+            <span>
+                <a href="#">Privacy</a>
+            </span>
+            <span>
+                <a href="#">Corporate Information</a>
+            </span>
+            <span>
+                <a href="#">Do Not Sell or Share My Personal <br> Information</a>
+                <!--leve gabmiarra para quebra de linha ao invés de usar wrap-->
+            </span>
+            <span>
+                <a href="#">Ad Choices</a>
+            </span>
+        </div>
+        <div class="select-container">
+            <select class="select-language" name="select" id="select">
+                <option value="value-1">português</option>
+                <option value="value-2" selected>inglês</option>
+            </select>
+        </div>
+    </footer>
     <script>
         const loginForm = document.getElementById('loginForm');
         const validCredentials = {
