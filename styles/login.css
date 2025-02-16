@@ -47,6 +47,8 @@ body {
 
 /*Main*/
 
+/*Login form*/
+
 .login-container {
     background-image: url(/assets/netflix-bg.jpg) ;
     background-size: cover;
@@ -59,6 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 6rem;
 }
 
 .login-box {
@@ -167,6 +170,7 @@ body {
     border-radius: 4px;
     position: relative;
     top: 3px;
+    /*Estilizar esse carinha aqui-- label?*/
 }
 
 .help > a {
@@ -208,10 +212,13 @@ body {
 /*Footer*/
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     min-height: 86vh;
     height: auto;
-    padding: 2rem 8rem 0 8rem ;
+    padding: 2rem 8rem 4rem 8rem ;
     background-color: #000000;
 }
 
@@ -252,20 +259,17 @@ footer > .footer-link > span > a {
     font-size: 0.9rem;
 }
 
-footer > .select-container > select {
+footer > .select-container > .select-language {
     padding: 6px 36px 6px 34px;
     color: var(--text-color);
     font-size: 16px;
     border-radius: 4px;
-    background-color: #80808090;
-
     /*Translate icon*/
 
     background: url(/assets/translate.png) no-repeat left center;
     background-position-x: 0.8rem;
     background-size: 14px;
-    
-    /*borda levemente transparente solid 1px*/
+    background-color: #5a585880;
 }
 
 footer > .select-container > select > option {
