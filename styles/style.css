@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: var(--text-color);
     font-size: var(--font-size-base);
 }
@@ -25,15 +27,15 @@ body {
     z-index: 1000;
     width: 100%;
     background-color: transparent;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
 }
 
 .header-container > nav{
     width: 100%;
     padding: 1rem;
     display: flex;
-    justify-content: space-around;
-    gap: 40%;
+    justify-content: space-between;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -69,7 +71,7 @@ select {
     background-color: var(--netlfix-red);
     color: var(--text-color);
     padding: 0.5rem 0.8rem;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.9rem;
     border-radius: 4px;
     text-decoration: none;
@@ -94,17 +96,25 @@ select {
     /*filter: brightness();*/
 }
 
-.text-container > div> h1 {
+.text {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-container > .text > h1 {
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 1rem;  
 }
 
-.text-container > p {
+.text-container > .text > p {
     margin-bottom: 2rem;
 }
 
-.text > p {
+.text-container > .text > p {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -114,14 +124,6 @@ select {
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 1rem;
-}
-
-.text {
-    width: 52%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 /*Main input*/
@@ -295,10 +297,95 @@ footer > .footer-link > span > a {
     font-size: 0.9rem;
 }
 
-/* começar media amanhã e deixar divs responsivas
-@media screen and (max-width: 767px){
-.header-container > nav{
-width: 80%;
+@media screen and (max-width: 959px){
+
+    /*Header*/
+
+    .header-container > nav{
+        padding: 1rem 2rem 1rem 0.8rem; 
+        justify-content: space-between;
+        gap: 1rem; 
+
+    }
+    .logo > img {
+        width: 90px;
+    }
+
+    /*Main*/    /*Login container*/
+
+    .text-container > .text > h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 0.7rem;  
+        width: 70%;
+    }
+    .text-container > .text > p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .text-container > div > h3 {
+        font-weight: 400;
+    }
+    
+    /*Footer*/
+
+    footer {
+        padding: 2rem 2rem 6rem 2rem;
+    }
+    .footer-signup {
+        padding: 1rem;
+    }
+    .signup-leads > button{
+        width: 22%;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .signup-leads > input[type="email"]{
+        width: 80%;
+    }
 }
+
+@media screen and (max-width: 648px) {
+    select {
+        width: 0px;
+    }
+
+    .text {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .text-container > .text > h1 {
+        width: 100%;
+    }
+
+    .text-container > .text > h3 {
+        padding: 0 2rem;
+    }
+    
+    .input-container > input[type="email"]{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+        footer {
+        padding: 2rem 2rem 6rem 2rem;
+    }
+    .footer-signup {
+        padding: 1rem;
+    }
+    .signup-leads > button{
+        width: 51%;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .signup-leads {
+        flex-direction: column;
+    }
+    .signup-leads > input[type="email"]{
+        width: 100%;
+    }
 }
-*/
+
+
