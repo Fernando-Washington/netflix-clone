@@ -43,6 +43,10 @@ header > nav > .nav-left {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+    padding: 0 2rem;
+}
+
+header > nav > .nav-right {
     padding: 1rem;
 }
 
@@ -81,8 +85,10 @@ header > nav > div > ul > li > a{
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh;
-    height: 730px; /* gambiarra remover e deixar auto mas fica assim por enquanto */
+    min-height: 40vh;
+    height: auto;
+
+    height: 720px; /* gambiarra remover e deixar auto mas fica assim por enquanto */
     background-color: rgba(0, 0, 0, 0.3); /* Ajuste o nível de escuridão */
     background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
     /*filter: brightness();*/
@@ -91,8 +97,8 @@ header > nav > div > ul > li > a{
 }
 
 .text-container img {
-    display: block;
     margin-bottom: 2rem;
+    width: 230px;
 }
 
 .text-container {
@@ -101,7 +107,7 @@ header > nav > div > ul > li > a{
     width: 40%;
     padding: 4rem;
     position: relative;
-    top: 64px;
+    top: 64px
 }
 
 .text-container > p {
@@ -267,8 +273,33 @@ footer > .footer-link > span > a {
     padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 852px){
+@media screen and (max-width: 1044px) {
+    .text-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 852px) {
     header > nav > div > ul{
     display: none;
-}
+}   
+
+    /*Text Container*/
+
+    .home-container {
+        align-items: center;
+    }
+    .text-container > p {
+        display: none;
+    }
+    .text-container {
+        margin-bottom: 0.5rem;
+    }
+    .text-container img {
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+    .text-container .text-button a {
+        margin: 0 auto;
+    }
 }
