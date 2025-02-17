@@ -239,32 +239,32 @@ footer > .call-us {
     font-size: 1rem; 
 }
 
-footer > .call-us > span > p {
+footer > .call-us > p {
     color: #ccc;
     filter: brightness(0.7);
 }
 
-footer > .call-us > span > p > a {
+footer > .call-us p > a {
     color: #FFFFFF;
     filter: brightness(0.9);
     text-decoration: none;
 }
 
-footer > .call-us > span > p > a:hover {
+footer > .call-us > p > a:hover {
     text-decoration: underline;
 }
 
-footer > .footer-link {
+footer > .footer-link > nav > ul {
     display: grid;
     grid-template-columns: repeat( 4, 1fr);
     color: #000000;
 }
 
-footer > .footer-link > span{
+footer > .footer-link > nav > ul > li {
     margin-bottom: 1rem;
 }
 
-footer > .footer-link > span > a {
+footer > .footer-link > nav > ul > li > a {
     text-decoration: underline;
     color: #ccc;
     filter: brightness(0.7);
@@ -288,7 +288,7 @@ footer > .select-container > select > option {
     color: var(--secondary-color);
 }
 
-@media screen and (max-width: 959px){
+@media screen and (max-width: 959px) {
 
     /*Header*/
 
@@ -297,7 +297,7 @@ footer > .select-container > select > option {
     }
 }
 
-@media screen and (max-width: 599px){
+@media screen and (max-width: 599px) {
 
     /*Login form*/
 
@@ -341,5 +341,4 @@ footer > .select-container > select > option {
         color: #000000;
         gap: 1rem;
     }
-
 }
