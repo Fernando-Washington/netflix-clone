@@ -18,7 +18,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: var(--text-color);
     font-size: var(--font-size-base);
-    overflow-x: hidden; 
 }
 
 /*Header*/
