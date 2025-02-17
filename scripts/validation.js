@@ -13,6 +13,6 @@ const loginForm = document.getElementById('loginForm');
         if (username === validCredentials.username && password === validCredentials.password) {
             window.location.href = 'home.html';
         } else {
-            alert('Credenciais inválidas. Tente novamente.');
+            alert('Credenciais inválidas. Tente username: rogerin123@gmail.com & password: souflamengo');
         }
     });
