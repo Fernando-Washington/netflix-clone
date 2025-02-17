@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@
     --secondary-color: #000000;
 }
 
-body{
+body {
     font-family: "Ubuntu", serif;
     color: var(--text-color);
     font-size: 16px;
@@ -53,18 +52,20 @@ header > nav > .nav-right {
 header > nav > div > img{
     width: 100px;
 }
+
 header > nav > div > ul{
     display: flex;
     gap: 2rem;
     list-style: none;
     padding: 0;
 }
+
 header > nav > div > ul > li > a{
     text-decoration: none;
     color: var(--text-color);
 }
 
-.profile-container{
+.profile-container {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -235,7 +236,7 @@ footer > .footer-link {
     color: #000000;
 }
 
-footer > .footer-link > span{
+footer > .footer-link > span {
     margin-bottom: 1rem;
 }
 
@@ -250,7 +251,7 @@ footer > .footer-link > span > a {
     margin: 4rem 0 2rem 0;
 }
 
-.code-service > a{ /*service code?*/
+.code-service > a { 
     border: 2px solid #ccc;
     filter: brightness(0.5);
     text-decoration: none;
@@ -270,13 +271,18 @@ footer > .footer-link > span > a {
 /*Media Queries*/
 
 @media screen and (max-width: 1044px) {
+
+    /*Text Container*/
+
     .text-container {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 852px) {
-    header > nav > div > ul{
+    /*Header*/
+
+    header > nav > div > ul {
     display: none;
 }   
 
@@ -316,6 +322,8 @@ footer > .footer-link > span > a {
 
 @media screen and (max-width: 852px) {
 
+    /*Header*/
+
     .header-container {
         padding: 0;
     }
@@ -326,10 +334,16 @@ footer > .footer-link > span > a {
         display: none;
     }
 
+
+    /*Text Container*/
+
     .text-container {
         width: 100%;
-}
+    }
     .text-container img {
         height: 250px;
+    }
+    .title-grid-1{
+        padding: 1rem 0 0 2rem
     }
 }  
