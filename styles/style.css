@@ -26,6 +26,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 header > span{
@@ -52,4 +53,29 @@ header > nav > ul > li a:hover {
 
     filter: brightness(0.8);
     box-shadow: 2px 2px 0px 0px #FFFFFF;
+}
+
+/*Main*/
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.text-container > h1, h3 {
+    margin-bottom: 2rem;
+}
+
+.text-container > ul > li {
+    margin-bottom: 1rem;
+}
+
+/*Footer*/
+
+footer > section > .footer-list {
+    color: var(--netlfix-red);
+    
 }
