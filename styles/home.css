@@ -81,24 +81,20 @@ header > nav > div > ul > li > a{
 /*Main*/
 
 .home-container {
-    background-image: url(/assets/Hero.png);
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 40vh;
     height: auto;
+
+    background-image: url(/assets/Hero.png);
+    background-size: cover;
+    background-position: center;
 
     height: 720px; /* gambiarra remover e deixar auto mas fica assim por enquanto */
     background-color: rgba(0, 0, 0, 0.3); /* Ajuste o nível de escuridão */
     background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
     /*filter: brightness();*/
-    display: flex;
-    flex-direction: column;
-}
-
-.text-container img {
-    margin-bottom: 2rem;
-    width: 230px;
 }
 
 .text-container {
@@ -108,6 +104,11 @@ header > nav > div > ul > li > a{
     padding: 4rem;
     position: relative;
     top: 64px
+}
+
+.text-container img {
+    margin-bottom: 2rem;
+    width: 230px;
 }
 
 .text-container > p {
@@ -163,7 +164,6 @@ header > nav > div > ul > li > a{
 
 .grid-wrapper {
     width: 100%;
-    overflow-y: hidden;
     overflow-x: scroll;
 }
 
@@ -198,12 +198,6 @@ header > nav > div > ul > li > a{
 .top-10-item {
     position: relative;
     left: -10%;
-}
-
-.top-10-text {
-    position: relative;
-    left: -30%;
-    width: 512px;
 }
 
 footer {
@@ -273,6 +267,8 @@ footer > .footer-link > span > a {
     padding-bottom: 2rem;
 }
 
+/*Media Queries*/
+
 @media screen and (max-width: 1044px) {
     .text-container {
         width: 60%;
@@ -304,4 +300,36 @@ footer > .footer-link > span > a {
     .text-container .text-button a {
         margin: 0 auto;
     }
+
+    /*Grid / Home*/
+
+    .grid-container{
+        padding: 1rem 0 0 2rem;
+    }
+
+    /*Footer*/
+
+    footer {
+        padding: 2rem;
+    }
 }
+
+@media screen and (max-width: 852px) {
+
+    .header-container {
+        padding: 0;
+    }
+    header > nav > .nav-left{
+        padding: 0 1rem;
+    }
+    header > nav > .nav-right > div > .bi-search, .bi-bell{
+        display: none;
+    }
+
+    .text-container {
+        width: 100%;
+}
+    .text-container img {
+        height: 250px;
+    }
+}  
