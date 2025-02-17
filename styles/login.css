@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 *{
     margin: 0;
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: "Poppins", serif;
+    font-family: "Ubuntu", serif;
     color: var(--text-color);
     font-size: 16px;
     overflow-x: hidden;
@@ -112,6 +112,7 @@ body {
     color: var(--text-color);
     font-size: 1rem;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -144,6 +145,11 @@ body {
     background-color: #5a585880;
     cursor: pointer;
     border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.code-acess:hover {
+    filter: brightness(0.8);
 }
 
 .forget-pass {
@@ -180,7 +186,7 @@ body {
 
 .new-here {
     position: relative;
-    right: 24px;
+    right: 32px;
     color: #ccccccc5;
     margin-bottom: 1rem
 }
@@ -207,6 +213,12 @@ body {
 
 .recaptcha > a:hover {
     text-decoration: underline;
+}
+
+hr {
+    display: none;
+    border: 1px solid #ccc;
+    filter: brightness(0.4);
 }
 
 /*Footer*/
@@ -274,4 +286,52 @@ footer > .select-container > .select-language {
 
 footer > .select-container > select > option {
     color: var(--secondary-color);
+}
+
+@media screen and (max-width: 959px){
+
+    /*Header*/
+
+    .logo > img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 599px){
+
+    /*Login form*/
+
+    .login-container {
+        background-color: #000000;
+    }
+    .login-box{
+        padding: 0;
+    }
+    form > input, button, p, a{
+        width: 100%;
+    }
+
+    form > p {
+        text-align: center;
+    }
+    .new-here {
+        right: 87px;
+    }
+    .recaptcha {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    hr {
+        display: block;
+    }
+
+    /*Footer*/
+
+    footer {
+        min-height: 20vh;
+        height: auto;
+}
+
 }
