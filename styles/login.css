@@ -165,7 +165,7 @@ body {
     display: flex;
     gap: 8px;
     position: relative;
-    right: 52px;
+    left: -26%;
     margin-bottom: 1rem;
 }
 
@@ -314,8 +314,11 @@ footer > .select-container > select > option {
     form > p {
         text-align: center;
     }
+    .help {
+    left: -29%;
+    }
     .new-here {
-        right: 87px;
+        left: -16%;
     }
     .recaptcha {
         display: flex;
