@@ -305,7 +305,7 @@ footer > .select-container > select > option {
         background-color: #000000;
     }
     .login-box{
-        padding: 0;
+        padding: 2rem;
     }
     form > input, button, p, a{
         width: 100%;
@@ -332,6 +332,14 @@ footer > .select-container > select > option {
     footer {
         min-height: 20vh;
         height: auto;
-}
+        padding: 2rem;
+    }
+
+    footer > .footer-link {
+        display: grid;
+        grid-template-columns: repeat( 4, 1fr);
+        color: #000000;
+        gap: 1rem;
+    }
 
 }
