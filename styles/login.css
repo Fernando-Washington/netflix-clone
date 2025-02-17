@@ -74,7 +74,7 @@ body {
     border-radius: 4px;
 }
 .login-box h1 {
-    color: white;
+    color: var(--text-color);
     font-size: 2rem;
     margin-bottom: 28px;
     font-weight: 500;
@@ -88,7 +88,7 @@ body {
     border-radius: 4px;
     border: none;
     background: #35353549;
-    color: white;
+    color: var(--text-color);
     font-size: 16px;
 }
 
@@ -245,7 +245,7 @@ footer > .call-us > p {
 }
 
 footer > .call-us p > a {
-    color: #FFFFFF;
+    color: var(--text-color);
     filter: brightness(0.9);
     text-decoration: none;
 }
