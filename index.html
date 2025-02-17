@@ -3,124 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlix</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="shortcut icon" href="assets/netflix-favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css' integrity='sha512-ywmPbuxGS4cJ7GxwCX+bCJweeext047ZYU2HP52WWKbpJnF4/Zzfr2Bo19J4CWPXZmleVusQ9d//RB5bq0RP7w==' crossorigin='anonymous'/>
+    <title>Don't is Netflix</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="/assets/netflix-favicon.ico" type="image/favicon-icon">
 </head>
 <body>
-    <header class="header-container">
+    <header>
+        <span>Para uma melhor experiência comece pelo Flexbox</span>
         <nav>
-            <div class="logo">
-                <img src="assets/logo.png" alt="Logo da Netflix">
-            </div>
-            <div class="select-container">
-                <select class="select-language" name="select" id="select-header" aria-label="Escolha o idioma">
-                    <option value="value-1">Português</option>
-                    <option value="value-2" selected>English</option>
-                </select>
-                <a href="login.html">Sign In</a>
-            </div>
+            <ul>    
+                <li><a href="main.html" target="_blank">Flexbox</a></li>
+                <li><a href="login.html" target="_blank">Formulário</a></li>
+                <li><a href="home.html" target="_blank">Grid</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <section class="text-container">
-            <div class="text">
-                <h1>Unlimited movies, TV shows, and more</h1>
-                <p>Starts at BRL 20.90. Cancel anytime.</p>
-                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-            </div>
-            <div class="input-container">
-                <input type="email" name="email" id="email-primary" placeholder="Email address">
-                <button id="login">Get Started <i class="bi bi-chevron-right"></i></button>
-            </div>
-        </section>
-        <section class="footer-signup">
-            <!--Se der tempo faço exatamente igual-->
-            <p>Ready to watch? Enter your email to create or restart your membership</p>
-            <div class="signup-leads">
-                <input type="email" name="email" id="email-secundary" placeholder="Email address">
-                <button id="login">
-                    Get Started <i class="bi bi-chevron-right"></i>
-                </button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="call-us">
-            <p>Questions? Call <a href="#">1-844-505-2993</a></p>
-        </div>
-        <div class="footer-link">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">FAQ.</a>
-                    </li>
-                    <li>
-                        <a href="#">Help Center</a>
-                    </li>
-                    <li>
-                        <a href="#">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Media Center</a>
-                    </li>
-                    <li>
-                        <a href="#">Investor Relations</a>
-                    </li>
-                    <li>
-                        <a href="#">Jobs</a>
-                    </li>
-                    <li>
-                        <a href="#">Netflix Shop</a>
-                    </li>
-                    <li>
-                        <a href="#">Redeem Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href="#">Buy Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href="#">Ways to Watch</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms of Use</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="#">Cookie Preferences</a>
-                    </li>
-                    <li>
-                        <a href="#">Corporate Information</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Speed Test</a>
-                    </li>
-                    <li>
-                        <a href="#">Legal Notices</a>
-                    </li>
-                    <li>
-                        <a href="#">Only on Netflix</a>
-                    </li>
-                    <li>
-                        <a href="#">Do Not Sell or Share My Personal <br> Information</a>
-                    </li>
-                    <!--leve gabmiarra para quebra de linha ao invés de usar wrap-->
-                    <li><a href="#">Ad Choices</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section class="options">
-            <select class="select-language" name="select" id="select-footer" aria-label="Escolha o idioma">
-                <option value="value-1">português</option>
-                <option value="value-2" selected>inglês</option>
-            </select>
-        </section>
-    </footer>
+    </header>   
 </body>
 </html>

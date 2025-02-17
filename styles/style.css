@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,360 +10,46 @@
     --text-color: #FFFFFF;
     --netlfix-red: #E50914;
     --secondary-color: #000000;
-    --transparent-white: #FFFFFF50; /*tom do transparente*/
-    --font-size-base: 16px;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", serif;
     color: var(--text-color);
-    font-size: var(--font-size-base);
+    font-size: 16px;
+    background-color: #1a1919;
+    overflow-x: hidden;
 }
 
 /*Header*/
 
-.header-container {
-    position: absolute;
-    z-index: 1000;
-    width: 100%;
-    background-color: transparent;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-.header-container > nav {
-    width: 100%;
-    padding: 1rem;
+header > span{
+    margin-bottom: 2rem;
+}
+
+header > nav > ul {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
+    list-style: none;
 }
 
-.logo > img {
-    width: 140px;
-    margin: 16px 0 0 16px;
-}
-
-select {
-    background: url(/assets/translate.png) no-repeat left center;
-    background-position-x: 0.8rem;
-    background-size: 14px;
-}
-
-.select-language {
-    padding: 6px 36px 6px 34px;
-    background-color: transparent;
-    color: var(--text-color);
-    font-size: 16px;
-    position: relative;
-    border-radius: 4px;
-    background-color: #80808015;
-    
-    /*borda levemente transparente solid 1px*/
-}
-
-.select-container {
-    display: flex;
-    gap: 1rem;
-}
-
-.select-container > a{
-    background-color: var(--netlfix-red);
-    color: var(--text-color);
-    padding: 0.5rem 0.8rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 4px;
+header > nav > ul > li a {
     text-decoration: none;
-}
-
-/*Main*/
-
-/*Login container*/
-
-.text-container {
-    background-image: url(/assets/netflix-bg.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Ajuste o nível de escuridão */
-    background-blend-mode: multiply; /* Aplica a cor sobre a imagem */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*filter: brightness();*/
-}
-
-.text {
-    width: 52%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.text-container > .text > h1 {
-    font-size: 3.5rem;
-    font-weight: 900;
-    margin-bottom: 1rem;  
-}
-
-.text-container > .text > p {
-    margin-bottom: 2rem;
-}
-
-.text-container > .text > p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
-.text-container > div > h3 {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-}
-
-/*Main input*/
-
-.input-container {
-    text-align: center;
-    width: 100%;
-}
-
-.input-container > input[type="email"]{
-    width: 30%;
-    padding: 1.2rem 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #00000060;
-    border: 1px solid var(--transparent-white);
-    /*mudar cor da borda, colocar background mais escuro, personalizar hover*/
-}
-
-.input-container > input::placeholder{
-        font-size: 1rem;
-        font-weight: 600;
-        color: #ccc;
-        filter: brightness(0.7);
-}
-
-.input-container > button {
-    position: relative;
-    bottom: -4px;
-    padding: 0.8rem 1rem;
-    gap: 1rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: var(--netlfix-red);
+    padding: 0.6rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
     color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 520;
-    transition: filter 0.4s ease-in-out;
-}
-.input-container > button:hover {
-    filter: brightness(0.8);
-}
-
-.input-container > button::placeholder::after {
-    display: none;
-}
-
-.input-container > button > i {
-    font-size: 1.3rem;
-    font-weight: 900;
-}
-
-/*Footer signup*/
-
-.footer-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000;
-    min-height: 24vh;
-    height: auto;
-}
-
-.footer-signup > p{
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-.signup-leads{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 8px;
-}
-
-.signup-leads > input[type="email"]{
-    width: 40%;
-    padding: 1.2rem 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #00000060;
-    border: 1px solid var(--transparent-white);
-    /*mudar cor da borda, colocar background mais escuro, personalizar hover*/
-}
-
-.signup-leads > input::placeholder{
-    font-size: 1rem;
-    font-weight: 600;
-    color: #ccc;
-    filter: brightness(0.7);
-}
-
-.signup-leads > button {
-    position: relative;
-    padding: 0.8rem 1.7rem;
-    gap: 1rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
     background-color: var(--netlfix-red);
-    color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 520;
-    transition: filter 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-.signup-leads > button:hover {
+
+header > nav > ul > li a:hover {
+
     filter: brightness(0.8);
-}
-
-/*Footer*/
-
-footer {
-    width: 100%;
-    min-height: 40vh;
-    height: auto;
-    padding: 2rem 8rem 6rem 8rem ;
-    background-color: #000000;
-}
-footer > .call-us {
-    margin-bottom: 2rem;
-    font-size: 1rem; 
-}
-
-footer > .call-us > p {
-    color: #ccc;
-    filter: brightness(0.7);
-}
-
-footer > .call-us > p > a{
-    color: #FFFFFF;
-    filter: brightness(0.9);
-    text-decoration: underline;
-}
-
-footer > .footer-link > nav > ul{
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
-    color: #000000;
-}
-
-footer > .footer-link > nav > ul > li{
-    margin-bottom: 1rem;
-}
-
-footer > .footer-link > nav > ul > li > a {
-    text-decoration: underline;
-    color: #ccc;
-    filter: brightness(0.7);
-    font-size: 0.9rem;
-}
-
-@media screen and (max-width: 959px){
-
-    /*Header*/
-
-    .header-container > nav{
-        padding: 1rem 2rem 1rem 0.8rem; 
-        justify-content: space-between;
-        gap: 1rem; 
-
-    }
-    .logo > img {
-        width: 90px;
-    }
-
-    /*Main*/    /*Login container*/
-
-    .text-container > .text > h1 {
-        font-size: 2rem;
-        font-weight: 900;
-        margin-bottom: 0.7rem;  
-        width: 70%;
-    }
-    .text-container > .text > p {
-        font-size: 1rem;
-        font-weight: 400;
-        margin-bottom: 1rem;
-    }
-    .text-container > div > h3 {
-        font-weight: 400;
-    }
-    
-    /*Footer*/
-
-    footer {
-        padding: 2rem 2rem 6rem 2rem;
-    }
-    .footer-signup {
-        padding: 1rem;
-    }
-    .signup-leads > button{
-        width: 22%;
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-    .signup-leads > input[type="email"]{
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 648px) {
-    select {
-        width: 0px;
-    }
-
-    .text {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    .text-container > .text > h1 {
-        width: 100%;
-    }
-
-    .text-container > .text > h3 {
-        padding: 0 2rem;
-    }
-    
-    .input-container > input[type="email"]{
-        width: 80%;
-        margin-bottom: 1rem;
-    }
-
-        footer {
-        padding: 2rem 2rem 6rem 2rem;
-    }
-    .footer-signup {
-        padding: 1rem;
-    }
-    .signup-leads > button{
-        width: 51%;
-        font-size: 1.2rem;
-        font-weight: 600;
-    }
-    .signup-leads {
-        flex-direction: column;
-    }
-    .signup-leads > input[type="email"]{
-        width: 100%;
-    }
+    box-shadow: 2px 2px 0px 0px #FFFFFF;
 }
