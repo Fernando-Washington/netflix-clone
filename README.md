@@ -49,3 +49,34 @@ Página Interna: Uma simulação da interface interna da Netflix, com uma lista 
    ```
 
 ---
+
+## 📚 Aprendizados
+HTML e CSS: Reforcei meus conhecimentos em criar layouts responsivos, utilizando técnicas como Flexbox, Grid e Media Queries.
+
+JavaScript: Implementei interações simples, como hover effects e manipulação básica do DOM.
+
+Design: Melhorei minhas habilidades de design, criando interfaces inspiradas na Netflix.
+
+---
+
+## 💡 Dicas
+Se você está começando, recomendo estudar os conceitos de Flexbox e Grid para entender melhor o layout do projeto.
+
+Use as ferramentas de desenvolvedor do navegador (F12) para inspecionar os elementos e ver como o design foi implementado.
+
+Sinta-se à vontade para modificar o projeto e adicionar novas funcionalidades.
+
+---
+
+## 📜 Licença
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [License](LICENSE) para mais detalhes.
+
+---
+
+## 🏫 Sobre o IFMS
+Este repositório foi desenvolvido como parte das atividades da Faculdade Federal de Mato Grosso do Sul (IFMS), uma instituição de ensino técnico e superior que promove a educação pública, gratuita e de qualidade. Para saber mais sobre o IFMS, visite o site oficial: [IFMS](https://www.ifms.edu.br/).
+
+---
+
+Feito com ❤️ por [Fernando Washington](https://github.com/Fernando-Washington).
+🌟 Se gostou, deixe uma estrela no repositório!
